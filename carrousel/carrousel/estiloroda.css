@@ -1,0 +1,38 @@
+
+*{ margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+#itens-wrapper{
+    width: 100vm;
+}
+
+#itens{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    
+}
+.item{
+    flex: none;
+    width: 50%;
+    height: 500px;
+    scroll-snap-align: start;
+    
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
